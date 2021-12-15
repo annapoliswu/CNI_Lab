@@ -1,4 +1,4 @@
-# CNI Engineering Lab Website
+# CNIEL Website
 
 The following website uses the Hugo Framework: (<https://gohugo.io/documentation/>). 
 
@@ -26,7 +26,7 @@ There are four main folders that are used.
   - All page-specfic css styles are in the their respective layout pages.
   - /_default folder
     - index.html is where you can edit the front page
-    - /partials include code blocks that can be inserted into html with {{partial "partialName" .}}
+    - /partials includes code blocks that can be inserted into html with {{partial "partialName" .}}
     - /_markup/render-image.html is used to ensure that all images in the content markup files are rendered correctly in html
   - /singles
     - Specifies the layouts for special one-off pages that need special layouts
@@ -43,10 +43,10 @@ Adding pages is as simple as creating a new file and filling in the information.
 - 'hugo new research/researchName.md'
 - Fill in frontmatter
 - Body of text and images go in the md body
-
+- Pages are sorted in lists by manually changed publish/edit date (this can be used to sort members and research pages)
 ## Miscellaneous Notes
 
-- Filling in the 'externalLink' field in research will specify it as an external research page
+- Filling in an the 'externalLink' field in research will specify it as an external research page
   - This page will not appear in the navbar
   - You only need to fill in title and shortDescription for the list page display
 - Any links on the members page will be automatically converted into link-buttons
